@@ -13,7 +13,7 @@ export interface Team {
     color: string;
     scoreFirstTime: number;
     scoreSecondTime: number;
-    scoreFinalTime?: number;
+    scoreFinalTime: number;
 }
 
 export interface _Time {

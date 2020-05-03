@@ -1,13 +1,203 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button:focus {outline:0;}
+input:focus {outline:0;}
+
+.input {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 75px;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid #222;
+  padding: 10px;
+  background: none;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
+  background-color: #fff;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  -webkit-box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
+}
+
+.Init--container{
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.Init--team {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) -20%,
+    rgba(235, 235, 235, 1) 35%,
+    rgba(73, 26, 26, 0.226) 100%
+  );
+}
+
+.button__init {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  margin-left: -65px;
+}
+
+.Game {
+  margin: auto;
+  max-width: 1024px;
+  position: relative;
+}
+.Game--container-scores {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.Game--team {
+  width: 48%;
+  border-radius: 20px;
+  position: relative;
+  /* border: 2px solid #222; */
+}
+
+.Game--block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.459);
+  animation: block ease-in-out .5s;
+}
+
+@keyframes block {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.Game-menu {
+}
+
+.Game-menu--arrow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  padding-bottom: 90px;
+  margin-top: -25px;
+  left: 50%;
+  bottom: -30px;
+  margin-left: -50px;
+  margin-right: -50px;
+  transition: all 0.6s;
+}
+
+.Game-menu--arrow__right {
+  transform: rotate(45deg);
+}
+
+.Game-menu--arrow__lefth {
+  transform: rotate(-45deg);
+}
+
+.Game-menu--button {
+  position: absolute;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  margin-right: -40px;
+  border-radius: 50%;
+  bottom: 25px;
+  z-index: 2;
+  border: 5px solid #222;
+}
+
+.Game-menu--time {
+  position: absolute;
+  left: 50%;
+  width: 150px;
+  height: 80px;
+  margin-left: -75px;
+  margin-right: -40px;
+  border-radius: 50%;
+  top: 25px;
+  z-index: 2;
+}
+
+.score-board {
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) -20%,
+    rgba(235, 235, 235, 1) 35%,
+    rgba(73, 26, 26, 0.226) 100%
+  );
+  /* border: 1px solid #222; */
+}
+.score-board--container-score-all {
+  /* height: 410px; */
+  padding: 10px 0px;
+}
+
+.score-board--continer-title {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 5px solid #222;
+}
+
+.score-board--container-button {
+  display: flex;
+  justify-content: center;
+}
+
+.score-board--button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.core-board--container-score {
+  display: flex;
+  justify-content: center;
+}
+
+.core-board--score {
+  font-size: 200px;
+  background-color: #fff;
+  margin: 10px 0px;
+  width: 200px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  -webkit-box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 22px -14px rgba(0, 0, 0, 0.75);
 }

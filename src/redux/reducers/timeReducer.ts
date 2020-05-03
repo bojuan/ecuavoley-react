@@ -11,7 +11,7 @@ const timeReducer = (state = defaultTime, action: Action) => {
     case SET_TIME_TIME:
       return {
         ...state,
-        name: action.payload,
+        time: action.payload,
       };
 
     default:
