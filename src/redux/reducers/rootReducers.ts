@@ -3,6 +3,11 @@ import teamOneReducer from "./teamOneReducer";
 import teamTwoReducer from "./teamTwoReducer";
 import timeReducer from "./timeReducer";
 
+interface Score {
+  value: number;
+  limitValue: number;
+}
+
 export interface Action {
     type: string;
     payload: any;
@@ -11,9 +16,9 @@ export interface Action {
 export interface Team {
     name: string;
     color: string;
-    scoreFirstTime: number;
-    scoreSecondTime: number;
-    scoreFinalTime: number;
+    scoreFirstTime: Score;
+    scoreSecondTime: Score;
+    scoreFinalTime: Score;
 }
 
 export interface _Time {

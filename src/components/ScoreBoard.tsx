@@ -6,10 +6,12 @@ interface PropsScoreBoards {
   time: number;
   addPoint: Function;
   removePoint: Function;
+  setLimit?: Function;
   color: string;
   teamName: string;
   limitFunction: Function;
   beforeScore?: number | null;
+  beforeLimit?: number | null;
 }
 
 const ScoreBoard: FunctionComponent<PropsScoreBoards> = (
@@ -25,17 +27,27 @@ const ScoreBoard: FunctionComponent<PropsScoreBoards> = (
                 props.addPoint();
                 if (props.time === 1) {
                   props.limitFunction(2);
+                  if (props.setLimit) {
+                    props.setLimit();
+                  }
                 } else if (props.time === 2) {
-                  console.log({fs: props.beforeScore, pL: props.limit }, props.beforeScore !== props.limit);
-                  if (props.beforeScore !== props.limit) {
-                    console.log('ENTROOOOOO')
+                  console.log(
+                    { fs: props.beforeScore, pL: props.beforeLimit },
+                    props.beforeScore !== props.limit
+                  );
+                  if (props.setLimit) {
+                    props.setLimit();
+                  }
+                  if (props.beforeScore !== props.beforeLimit) {
+                    console.log("ENTROOOOOO");
                     props.limitFunction(3);
                     return;
                   }
-                    alert(`Gano en dos tiempos el equipo ${props.teamName}`);
-                  
-                  
+                  alert(`Gano en dos tiempos el equipo ${props.teamName}`);
                 } else if (props.time === 3) {
+                  if (props.setLimit) {
+                    props.setLimit();
+                  }
                   alert(`Gano en tres tiempos el equipo ${props.teamName}`);
                 }
                 return;

@@ -6,12 +6,36 @@ import {
   REMOVE_POINT_TEAM_TWO_SECOND,
   REMOVE_POINT_TEAM_TWO_THIRD,
   ADD_POINT_TEAM_TWO_THIRD,
+  SET_LIMIT_FIRST_TEAM_TWO,
+  SET_LIMIT_SECOND_TEAM_TWO,
+  SET_LIMIT_FINAL_TEAM_TWO
 } from "../../constants/const";
 
 export const setNameTeamTwo: Function = (name: string) => {
   return {
     type: SET_NAME_TEAM_TWO,
     payload: name,
+  };
+};
+
+export const setLimitFirstTeamTwo: Function = (limit: number) => {
+  return {
+    type: SET_LIMIT_FIRST_TEAM_TWO,
+    payload: limit,
+  };
+};
+
+export const setLimitSecondTeamTwo: Function = (limit: number) => {
+  return {
+    type: SET_LIMIT_SECOND_TEAM_TWO,
+    payload: limit,
+  };
+};
+
+export const setLimitFinalTeamTwo: Function = (limit: number) => {
+  return {
+    type: SET_LIMIT_FINAL_TEAM_TWO,
+    payload: limit,
   };
 };
 

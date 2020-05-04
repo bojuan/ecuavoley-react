@@ -9,27 +9,41 @@ import {
   removePointTeamOneFirst,
   addPointTeamOneSecond,
   addPointTeamOneThird,
+  setLimitFirstTeamOne,
+  setLimitSecondTeamOne,
+  setLimitFinalTeamOne,
 } from "../redux/actions/teamOneAction";
 import {
   addPointTeamTwoFirst,
   removePointTeamTwoFirst,
   addPointTeamTwoSecond,
   addPointTeamTwoThird,
+  setLimitFirstTeamTwo,
+  setLimitSecondTeamTwo,
+  setLimitFinalTeamTwo,
 } from "../redux/actions/teamTwoAction";
-import { setTimeTime } from "../redux/actions/timeAction";
+import {
+  setTimeTime,
+  setTimeLimitAdd,
+  setTimeLimitRemove,
+} from "../redux/actions/timeAction";
+import Modal from "../components/Modal";
 
 const Game: FunctionComponent<{}> = (props) => {
   const reducer: Reducers = useSelector((state: Reducers) => state);
   const dispatch = useDispatch();
 
   const [change, setChange] = useState<string>("left");
+  const [openModalLimit, setOpenModalLimit] = useState<boolean>(false);
+
+  const onCloseModalLimit: Function = () => setOpenModalLimit(false);
 
   return (
     <div className="Game">
       <div
         className="Game--container-scores"
         style={{
-          flexDirection: reducer.timeReducer.time === 1 ? "row" : "row-reverse",
+          flexDirection: reducer.timeReducer.time === 1 ||  reducer.timeReducer.time === 3 ? "row" : "row-reverse",
         }}
       >
         <div className="Game--team">
@@ -37,10 +51,10 @@ const Game: FunctionComponent<{}> = (props) => {
             limit={reducer.timeReducer.limitScore}
             score={
               reducer.timeReducer.time === 1
-                ? reducer.teamOneReducer.scoreFirstTime
+                ? reducer.teamOneReducer.scoreFirstTime.value
                 : reducer.timeReducer.time === 2
-                ? reducer.teamOneReducer.scoreSecondTime
-                : reducer.teamOneReducer.scoreFinalTime
+                ? reducer.teamOneReducer.scoreSecondTime.value
+                : reducer.teamOneReducer.scoreFinalTime.value
             }
             time={reducer.timeReducer.time}
             addPoint={() => {
@@ -53,12 +67,22 @@ const Game: FunctionComponent<{}> = (props) => {
               }
             }}
             removePoint={() => dispatch(removePointTeamOneFirst())}
+            setLimit={() => {
+              if (reducer.timeReducer.time === 1) {
+                dispatch(setLimitFirstTeamOne(reducer.timeReducer.limitScore));
+              } else if (reducer.timeReducer.time === 2) {
+                dispatch(setLimitSecondTeamOne(reducer.timeReducer.limitScore));
+              } else {
+                dispatch(setLimitFinalTeamOne(reducer.timeReducer.limitScore));
+              }
+            }}
             limitFunction={(time: number) => {
               dispatch(setTimeTime(time));
             }}
             color={reducer.teamOneReducer.color}
             teamName={reducer.teamOneReducer.name}
-            beforeScore={reducer.teamOneReducer.scoreFirstTime}
+            beforeScore={reducer.teamOneReducer.scoreFirstTime.value}
+            beforeLimit={reducer.teamOneReducer.scoreFirstTime.limitValue}
           />
           {change !== "left" &&
             (reducer.timeReducer.time === 1 ||
@@ -74,10 +98,10 @@ const Game: FunctionComponent<{}> = (props) => {
             limit={reducer.timeReducer.limitScore}
             score={
               reducer.timeReducer.time === 1
-                ? reducer.teamTwoReducer.scoreFirstTime
+                ? reducer.teamTwoReducer.scoreFirstTime.value
                 : reducer.timeReducer.time === 2
-                ? reducer.teamTwoReducer.scoreSecondTime
-                : reducer.teamTwoReducer.scoreFinalTime
+                ? reducer.teamTwoReducer.scoreSecondTime.value
+                : reducer.teamTwoReducer.scoreFinalTime.value
             }
             time={reducer.timeReducer.time}
             addPoint={() => {
@@ -90,12 +114,22 @@ const Game: FunctionComponent<{}> = (props) => {
               }
             }}
             removePoint={() => dispatch(removePointTeamTwoFirst())}
+            setLimit={() => {
+              if (reducer.timeReducer.time === 1) {
+                dispatch(setLimitFirstTeamTwo(reducer.timeReducer.limitScore));
+              } else if (reducer.timeReducer.time === 2) {
+                dispatch(setLimitSecondTeamTwo(reducer.timeReducer.limitScore));
+              } else {
+                dispatch(setLimitFinalTeamTwo(reducer.timeReducer.limitScore));
+              }
+            }}
             limitFunction={(time: number) => {
               dispatch(setTimeTime(time));
             }}
             color={reducer.teamTwoReducer.color}
             teamName={reducer.teamTwoReducer.name}
-            beforeScore={reducer.teamTwoReducer.scoreFirstTime}
+            beforeScore={reducer.teamTwoReducer.scoreFirstTime.value}
+            beforeLimit={reducer.teamTwoReducer.scoreSecondTime.limitValue}
           />
 
           {change === "left" &&
@@ -122,6 +156,7 @@ const Game: FunctionComponent<{}> = (props) => {
           className="Game-menu--button"
           onClick={() => {
             console.log("reducer", reducer);
+
             if (change === "left") {
               setChange("right");
             } else {
@@ -137,7 +172,29 @@ const Game: FunctionComponent<{}> = (props) => {
             : reducer.timeReducer.time === 2
             ? "Segundo Tiempo"
             : "Tercer Tiempo"}
-          <div>Hasta: {reducer.timeReducer.limitScore}</div>
+          <div className="Game-menu--limit">
+            <span>Hasta:</span>
+            <button className="button" onClick={() => setOpenModalLimit(true)}>
+              {reducer.timeReducer.limitScore}
+            </button>
+          </div>
+          <Modal visible={openModalLimit} onClose={onCloseModalLimit}>
+            <div>
+              <button
+                className="button"
+                onClick={() => dispatch(setTimeLimitRemove())}
+              >
+                {"<"}
+              </button>
+              {reducer.timeReducer.limitScore}
+              <button
+                className="button"
+                onClick={() => dispatch(setTimeLimitAdd())}
+              >
+                {">"}
+              </button>
+            </div>
+          </Modal>
         </div>
       </div>
     </div>
