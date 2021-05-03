@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="C:\Users\Bryan\Desktop\EcuavoleyLogo.svg.png"
+   sodipodi:docname="EcuavoleyLogo.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 136 87"
+   height="87mm"
+   width="136mm">
+  <defs
+     id="defs2">
+    <rect
+       id="rect835"
+       height="34.017857"
+       width="142.11903"
+       y="88.446426"
+       x="80.130951" />
+  </defs>
+  <sodipodi:namedview
+     width="147mm"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:window-height="837"
+     inkscape:window-width="1600"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer2"
+     inkscape:document-units="mm"
+     inkscape:cy="438.40339"
+     inkscape:cx="184.64274"
+     inkscape:zoom="0.49497475"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Capa 1">
+    <text
+       transform="translate(-78.330875,-33.982569)"
+       style="font-style:normal;font-weight:normal;font-size:25.4px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect835);fill:#000000;fill-opacity:1;stroke:none;"
+       id="text833"
+       xml:space="preserve"><tspan
+         x="80.130859"
+         y="111.50728"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25.4px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold'">ecuavoley</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:label="Capa 2"
+     id="layer2"
+     inkscape:groupmode="layer">
+    <path
+       sodipodi:nodetypes="csscssc"
+       id="path840"
+       d="m 33.550076,52.76297 c 0,0 8.504464,-17.764885 19.843749,-17.764885 11.339284,0 12.000744,6.803571 23.529014,5.291667 11.52828,-1.511906 19.56027,-16.630952 19.56027,-16.630952 0,0 -2.55134,24.47396 -16.34747,27.30878 -13.79613,2.83482 -15.02455,-4.44122 -24.662943,-4.06325 -9.638392,0.37798 -21.92262,5.85864 -21.92262,5.85864 z"
+       style="fill:#ff8dff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <circle
+       r="9.0871639"
+       cy="26.497673"
+       cx="68.029587"
+       id="path842"
+       style="opacity:0.997;fill:#ff8dff;fill-opacity:1;stroke:none;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none" />
+    <g
+       transform="translate(-39.021351,-56.66114)"
+       id="g909">
+      <circle
+         style="opacity:0.997;fill:none;fill-opacity:1;stroke:#333333;stroke-width:0.765;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path844"
+         cx="143.25647"
+         cy="66.817383"
+         r="5.5458422" />
+      <path
+         sodipodi:type="star"
+         style="opacity:0.997;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.765;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path850"
+         sodipodi:sides="5"
+         sodipodi:cx="143.15848"
+         sodipodi:cy="66.901787"
+         sodipodi:r1="2.3247263"
+         sodipodi:r2="3.5471871"
+         sodipodi:arg1="0.9151007"
+         sodipodi:arg2="1.5434192"
+         inkscape:flatsided="true"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 144.57589,68.744421 -2.73186,0.07481 -0.91533,-2.575032 2.16614,-1.666266 2.25409,1.545222 z"
+         inkscape:transform-center-x="0.026410769"
+         inkscape:transform-center-y="-0.39349306" />
+      <path
+         style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 143.15848,63.688987 -1.84263,-0.968564 0.33072,-1.039434 c 0,0 0.44885,-0.330729 1.46466,-0.330729 1.01581,0 1.7009,0.236236 1.7009,0.236236 l 0.25986,1.181174 z"
+         id="path867"
+         sodipodi:nodetypes="cccsccc" />
+      <path
+         sodipodi:nodetypes="cccsccc"
+         id="path867-4"
+         d="m 140.17335,66.174858 -1.56724,1.370092 -0.85055,-0.682911 c 0,0 -0.14686,-0.537847 0.21902,-1.485477 0.36588,-0.94763 0.83302,-1.501648 0.83302,-1.501648 l 1.19549,0.183023 z"
+         style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccsccc"
+         id="path867-6"
+         d="m 141.73019,69.452767 1.17319,1.719605 -0.77958,0.762934 c 0,0 -0.55153,0.0816 -1.4487,-0.394799 -0.89717,-0.476398 -1.39146,-1.006339 -1.39146,-1.006339 l 0.32444,-1.165091 z"
+         style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccsccc"
+         id="path867-9"
+         d="m 145.20312,69.259911 2.01449,-0.524623 0.45538,0.991177 c 0,0 -0.10919,0.546742 -0.86018,1.230732 -0.75102,0.683985 -1.4166,0.970625 -1.4166,0.970625 l -0.98745,-0.698307 z"
+         style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cccsccc"
+         id="path867-7"
+         d="m 146.29794,65.745916 -0.20941,-2.071123 1.0493,-0.297952 c 0,0 0.52353,0.191731 1.08422,1.038783 0.56069,0.847052 0.74185,1.548721 0.74185,1.548721 l -0.84151,0.868653 z"
+         style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ecuavoley-react/static/css/main.a9529e43.chunk.css",
+    "main.js": "/ecuavoley-react/static/js/main.a00a1833.chunk.js",
+    "main.js.map": "/ecuavoley-react/static/js/main.a00a1833.chunk.js.map",
+    "runtime-main.js": "/ecuavoley-react/static/js/runtime-main.1745f117.js",
+    "runtime-main.js.map": "/ecuavoley-react/static/js/runtime-main.1745f117.js.map",
+    "static/js/2.88e6f911.chunk.js": "/ecuavoley-react/static/js/2.88e6f911.chunk.js",
+    "static/js/2.88e6f911.chunk.js.map": "/ecuavoley-react/static/js/2.88e6f911.chunk.js.map",
+    "static/js/3.3921b53a.chunk.js": "/ecuavoley-react/static/js/3.3921b53a.chunk.js",
+    "static/js/3.3921b53a.chunk.js.map": "/ecuavoley-react/static/js/3.3921b53a.chunk.js.map",
+    "index.html": "/ecuavoley-react/index.html",
+    "static/css/main.a9529e43.chunk.css.map": "/ecuavoley-react/static/css/main.a9529e43.chunk.css.map",
+    "static/js/2.88e6f911.chunk.js.LICENSE.txt": "/ecuavoley-react/static/js/2.88e6f911.chunk.js.LICENSE.txt",
+    "static/media/EcuavoleyLogo.19ae62e3.svg": "/ecuavoley-react/static/media/EcuavoleyLogo.19ae62e3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1745f117.js",
+    "static/js/2.88e6f911.chunk.js",
+    "static/css/main.a9529e43.chunk.css",
+    "static/js/main.a00a1833.chunk.js"
+  ]
+}
