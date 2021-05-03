@@ -4,6 +4,8 @@ Este es mi primer proyecto en GitHub. El proyecto está creado con React y Types
 
 ![alt text](https://github.com/bojuan/ecuavoley-react/blob/master/src/assets/init.PNG)
 
+![alt text](https://github.com/bojuan/ecuavoley-react/blob/master/src/assets/game.PNG)
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
